@@ -5,6 +5,7 @@ import random
 import time
 
 
+
 # calc probability of getting string correct
 def calc_prob(strlen, charlen):
     return strlen * charlen
@@ -29,6 +30,9 @@ def main():
     
     print(f"String to guess: {data["string"]}")
     print(f"Probability of guess: 1/{prob} or {(1/prob)*100}%")
+
+    # change seed to time
+    random.seed(time.time())
 
     time.sleep(5)
 
