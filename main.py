@@ -5,7 +5,6 @@ import random
 import time
 
 
-
 # calc probability of getting string correct
 def calc_prob(strlen, charlen):
     return strlen * charlen
